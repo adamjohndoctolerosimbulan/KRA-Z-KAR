@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#292929"
+    android:fillViewport="true"
+    tools:ignore="TextSizeCheck"
+    tools:layout_editor_absoluteX="1dp"
+    tools:layout_editor_absoluteY="1dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#292929"
+        tools:context=".CarInfoActivity3">
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="411dp"
+            android:layout_height="306dp"
+            android:importantForAccessibility="no"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/carheader3" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="208dp"
+            android:fontFamily="@font/montserrat_black"
+            android:text="Supra MK5"
+            android:textColor="#000000"
+            android:textSize="34sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.073"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.829"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="Vehicle Details "
+            android:textColor="#FFFFFF"
+            android:textSize="19sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.117"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView5"
+            tools:ignore="HardcodedText" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="348dp"
+            android:layout_height="280dp"
+            android:layout_marginTop="70dp"
+            android:importantForAccessibility="no"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.488"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView5"
+            app:srcCompat="@drawable/vehicleinfo3"
+            tools:ignore="ImageContrastCheck" />
+
+        <ImageView
+            android:id="@+id/supraPlayer"
+            android:layout_width="348dp"
+            android:layout_height="136dp"
+            android:layout_marginTop="16dp"
+            android:importantForAccessibility="no"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView"
+            app:srcCompat="@drawable/supraplayer" />
+
+        <ImageButton
+            android:id="@+id/stop_button"
+            android:layout_width="52dp"
+            android:layout_height="42dp"
+            android:background="@null"
+            android:importantForAccessibility="no"
+            app:layout_constraintBottom_toBottomOf="@+id/supraPlayer"
+            app:layout_constraintEnd_toEndOf="@+id/supraPlayer"
+            app:layout_constraintHorizontal_bias="0.664"
+            app:layout_constraintStart_toStartOf="@+id/supraPlayer"
+            app:layout_constraintTop_toBottomOf="@+id/imageView"
+            app:layout_constraintVertical_bias="0.88"
+            app:srcCompat="@drawable/stop"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <ImageButton
+            android:id="@+id/pause_button"
+            android:layout_width="45dp"
+            android:layout_height="42dp"
+            android:background="@null"
+            android:importantForAccessibility="no"
+            app:layout_constraintBottom_toBottomOf="@+id/supraPlayer"
+            app:layout_constraintEnd_toEndOf="@+id/supraPlayer"
+            app:layout_constraintStart_toStartOf="@+id/supraPlayer"
+            app:layout_constraintTop_toTopOf="@+id/supraPlayer"
+            app:layout_constraintVertical_bias="0.862"
+            app:srcCompat="@drawable/pause"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <ImageView
+            android:id="@+id/supraGallery"
+            android:layout_width="342dp"
+            android:layout_height="256dp"
+            android:layout_marginTop="24dp"
+            android:importantForAccessibility="no"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/supraPlayer"
+            app:srcCompat="@drawable/supracollage" />
+
+        <ImageButton
+            android:id="@+id/play_button"
+            android:layout_width="49dp"
+            android:layout_height="42dp"
+            android:background="@null"
+            android:importantForAccessibility="no"
+            app:layout_constraintBottom_toBottomOf="@+id/supraPlayer"
+            app:layout_constraintEnd_toEndOf="@+id/supraPlayer"
+            app:layout_constraintHorizontal_bias="0.342"
+            app:layout_constraintStart_toStartOf="@+id/supraPlayer"
+            app:layout_constraintTop_toTopOf="@+id/supraPlayer"
+            app:layout_constraintVertical_bias="0.862"
+            app:srcCompat="@drawable/play"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="338dp"
+            android:layout_height="22dp"
+            app:layout_constraintBottom_toBottomOf="@+id/supraPlayer"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.49"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/supraPlayer"
+            app:layout_constraintVertical_bias="0.53" />
+
+        <ImageButton
+            android:id="@+id/backHome1"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@null"
+            android:importantForAccessibility="no"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.046"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.027"
+            app:srcCompat="@drawable/backv2" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>
